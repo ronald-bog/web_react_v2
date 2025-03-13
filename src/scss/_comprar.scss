@@ -1,0 +1,84 @@
+.comprar {
+    padding: .5em .5em 14.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    @include m1366 {
+        padding: 1em 6em 14.5em;
+
+    }
+
+    @include m1920 {
+        padding: 1em 20em 14.5em;
+    }
+
+    .card {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px $shadow;
+
+        @include m1366 {
+            width: 48%;
+            height: 510px;
+        }
+
+        @include m1920 {
+            height: 480px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px;
+
+            @include m1366 {
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+
+        h2 {
+            color: $grey;
+            padding: .2em 0 .5em;
+        }
+
+        p {
+            color: $black;
+            padding: 0 0 .5em;
+
+            a {
+                color: #2AD269;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+
+        .button-cont {
+            display: flex;
+            justify-content: center;
+
+            button {
+                border: 0;
+                border-radius: 1em;
+                margin: .5em 0 .5em;
+                background-image: url('#{$paypal}');
+                width: 10em;
+                height: 4em;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-color: white;
+                cursor: pointer;
+            }
+
+            .contact {
+                background-image: none;
+                background-color: #2AD269;
+                color: white;
+                font-weight: bold;
+            }
+        }
+
+
+    }
+}

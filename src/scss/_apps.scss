@@ -1,0 +1,101 @@
+.apps {
+    padding: .5em .3em 10em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    @include m1366 {
+        padding: 1.5em 6em 14.5em;
+    }
+
+    @include m1920 {
+        padding: 1em 20em 14.5em;
+    }
+
+    .youtube {
+        width: 100%;
+        padding-bottom: 1em;
+
+        @include m1366 {
+            width: 55%;
+        }
+
+        iframe {
+            border-radius: 1em;
+            border: none;
+            box-shadow: 5px 5px 5px $shadow;
+            width: 370px;
+            height: 208px;
+
+            @include m1366 {
+                width: 640px;
+                height: 360px;
+            }
+        }
+    }
+
+    .card1 {
+        padding-bottom: 1em;
+
+        @include m1366 {
+            width: 43%;
+            padding-left: 2em;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            padding-bottom: .6em;
+
+            @include m1366 {
+                padding-bottom: 1em;
+            }
+        }
+
+        li {
+            list-style: none;
+
+            @include m1366 {
+                padding-bottom: 1em;
+            }
+        }
+    }
+
+    .slider {
+        padding-bottom: 1em;
+        width: 100%;
+
+        @include m1366 {
+            width: 55%;
+        }
+
+        @include m1920 {
+            padding-right: 3.8em; // width: 640px;
+        }
+    }
+
+    .card2 {
+        @include m1366 {
+            width: 43%;
+            padding-left: 2em;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            padding-bottom: .6em;
+
+            @include m1366 {
+                padding-bottom: 1em;
+            }
+        }
+
+        li {
+            list-style: none;
+
+            @include m1366 {
+                padding-bottom: 1em;
+            }
+        }
+    }
+}

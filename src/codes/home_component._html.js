@@ -1,0 +1,8 @@
+export const code4 = `<div class="hero">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div class="hero-logo">
+    <img src="../../../assets/logo_D.svg" alt="Logo Natsoft">
+  </div>
+</div>`
